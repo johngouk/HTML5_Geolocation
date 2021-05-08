@@ -1,0 +1,91 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+  <meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/> 
+	<title>Mobile ToDo List</title> 
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.2/jquery.mobile-1.1.2.min.css" />
+	<script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.1.2/jquery.mobile-1.1.2.min.js"></script>
+  <script src="js/main.js"></script>
+</head> 
+<body> 
+
+
+<!-------------------------------- 
+    Home page
+---------------------------------->
+<div data-role="page" id="home">
+
+	<div data-role="header">
+		<h1>Mobile ToDo</h1>
+	</div><!-- /header -->
+
+	<div data-role="content">	
+		<p><a href="#add" data-role="button" data-icon="plus" data-iconpos="right">Add a To Do</a></p>
+		<p><a href="#" data-ajax="false" id="clearButton" data-role="button" data-icon="delete" data-iconpos="right" data-theme="b">Cancel all To Dos</a></p>
+    <ul id="toDos" data-role="listview" data-inset="true" data-filter="true" data-filter-placeholder="Search ToDos...">
+    </ul>
+	</div><!-- /content -->
+
+  <footer data-role="footer" id="footer">
+    <h4>Mobile To Do &copy 2021</h4>
+  </footer><!-- /footer -->
+
+</div><!-- /page -->
+
+
+<!-------------------------------- 
+    Add page
+---------------------------------->
+<div data-role="page" id="add">
+
+	<div data-role="header">
+		<a href="index.html" data-role="button" data-icon="delete" data-iconpos="left" data-theme="b">Cancel</a>
+		<h1>Mobile ToDo</h1>
+		<a href="#" id="addButton" name ="addButton" data-role="button" data-icon="check" data-iconpos="left" data-theme="c" >Save</a>
+ 	</div><!-- /header -->
+
+	<div data-role="content">	
+    <form id="addForm" >
+      <input type="text" name="toDoNameAdd" id="toDoNameAdd" placeholder="Add ToDo Name">
+      <input type="date" name="toDoDateAdd" id="toDoDateAdd" placeholder="dd mmm yyyy">
+    </form>
+    
+	</div><!-- /content -->
+
+  <footer data-role="footer" id="footer">
+    <h4>Mobile To Do &copy 2021</h4>
+  </footer><!-- /footer -->
+
+</div><!-- /page -->
+
+<!-------------------------------- 
+    Edit page
+---------------------------------->
+<div data-role="page" id="edit">
+
+	<div data-role="header">
+		<a href="index.html" data-role="button" data-icon="delete" data-iconpos="left" data-theme="b">Cancel</a>
+		<h1>Mobile ToDo</h1>
+		<a href="#" id="saveButton" data-role="button" data-icon="check" data-iconpos="left" data-theme="c">Save</a>
+ 	</div><!-- /header -->
+
+	<div data-role="content">	
+    <form id="editForm" >
+      <input type="text" id="toDoNameEdit" name="toDoNameEdit" placeholder="Add ToDo Name">
+      <input type="date" id="toDoDateEdit" name="toDoDateEdit">
+      <a href="#" id="deleteButton" data-role="button" data-icon="delete">Delete</a>
+    </form>
+    
+	</div><!-- /content -->
+
+  <footer data-role="footer" id="footer">
+    <h4>Mobile To Do &copy 2021</h4>
+  </footer><!-- /footer -->
+
+</div><!-- /page -->
+
+
+</body>
+</html>
