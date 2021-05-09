@@ -22,10 +22,27 @@
 	</div><!-- /header -->
 
 	<div data-role="content">
-		<p><a href="#" id="getLocation" data-role="button" data-icon="plus" data-iconpos="right">Get Current Location</a></p>
+		<p><a href="#" id="getPosition" data-role="button" data-icon="plus" data-iconpos="right">Get Current GPS Position</a></p>
+		<p><a href="#" id="getLocation" data-role="button" data-icon="plus" data-iconpos="right">Get Current Weather Location</a></p>
 		<p><a href="#" id="getWeather" data-role="button" data-icon="plus" data-iconpos="right">Get Current Weather</a></p>
-		<p><a href="#" id="getEcho" data-role="button" data-icon="plus" data-iconpos="right">Echo Weather URL</a></p>
-		<p id="demo"></p>
+		<p id="position"></p>
+    <br>
+    <p id="location"></p>
+    <br>
+    <p id="weather"></p>
+    <table>
+      <thead>
+        <tr>
+        <td> Day </td>
+        <td> High </td>
+        <td> Low </td>
+        <td> Icon </td>
+        <td> Prec </td>
+        </tr>
+      </thead>
+      <tbody id="weather-table">
+      <!--  <tr><td>Tuesday</td><td>17</td><td>8.4</td><td><img src=></td><td>Light Rain Showers</td> -->
+    </table>
 	</div><!-- /content -->
 
   <footer data-role="footer" id="footer">
